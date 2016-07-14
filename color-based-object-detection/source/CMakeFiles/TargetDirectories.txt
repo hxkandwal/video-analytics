@@ -1,0 +1,2 @@
+/Users/Heman/Documents/workstation/Developement_Studio/Xcode_Laboratory/Object-Detection/CMakeFiles/ObjectDetectionRGB.dir
+/Users/Heman/Documents/workstation/Developement_Studio/Xcode_Laboratory/Object-Detection/CMakeFiles/ObjectDetectionHSV.dir
