@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		673F9A1D1CDD04D30082F761 /* libopencv_imgproc.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A1A1CDD04D30082F761 /* libopencv_imgproc.2.4.11.dylib */; };
+		673F9A1E1CDD04D30082F761 /* libopencv_ml.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A1B1CDD04D30082F761 /* libopencv_ml.2.4.11.dylib */; };
+		673F9A1F1CDD04D30082F761 /* libopencv_core.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A1C1CDD04D30082F761 /* libopencv_core.2.4.11.dylib */; };
+		673F9A211CDD07FB0082F761 /* libopencv_highgui.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A201CDD07FB0082F761 /* libopencv_highgui.2.4.11.dylib */; };
+		673F9A4E1CDD32620082F761 /* asm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A231CDD32620082F761 /* asm.cpp */; };
+		673F9A4F1CDD32620082F761 /* classicdesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A271CDD32620082F761 /* classicdesc.cpp */; };
+		673F9A501CDD32620082F761 /* convshape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A291CDD32620082F761 /* convshape.cpp */; };
+		673F9A511CDD32620082F761 /* err.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A2B1CDD32620082F761 /* err.cpp */; };
+		673F9A521CDD32620082F761 /* eyedet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A2D1CDD32620082F761 /* eyedet.cpp */; };
+		673F9A531CDD32620082F761 /* eyedist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A2F1CDD32620082F761 /* eyedist.cpp */; };
+		673F9A541CDD32620082F761 /* faceroi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A311CDD32620082F761 /* faceroi.cpp */; };
+		673F9A551CDD32620082F761 /* hat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A331CDD32620082F761 /* hat.cpp */; };
+		673F9A561CDD32620082F761 /* hatdesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A351CDD32620082F761 /* hatdesc.cpp */; };
+		673F9A571CDD32620082F761 /* landmarks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A371CDD32620082F761 /* landmarks.cpp */; };
+		673F9A581CDD32620082F761 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A3A1CDD32620082F761 /* misc.cpp */; };
+		673F9A591CDD32620082F761 /* pinstart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A3C1CDD32620082F761 /* pinstart.cpp */; };
+		673F9A5A1CDD32620082F761 /* print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A3E1CDD32620082F761 /* print.cpp */; };
+		673F9A5B1CDD32620082F761 /* shape17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A401CDD32620082F761 /* shape17.cpp */; };
+		673F9A5C1CDD32620082F761 /* shapehacks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A421CDD32620082F761 /* shapehacks.cpp */; };
+		673F9A5D1CDD32620082F761 /* shapemod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A441CDD32620082F761 /* shapemod.cpp */; };
+		673F9A5E1CDD32620082F761 /* startshape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A461CDD32620082F761 /* startshape.cpp */; };
+		673F9A5F1CDD32620082F761 /* stasm_lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A4A1CDD32620082F761 /* stasm_lib.cpp */; };
+		673F9A601CDD32620082F761 /* stasm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A4C1CDD32620082F761 /* stasm.cpp */; };
+		673F9A671CDD34CB0082F761 /* libopencv_legacy.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A621CDD34CB0082F761 /* libopencv_legacy.2.4.11.dylib */; };
+		673F9A681CDD34CB0082F761 /* libopencv_ocl.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A631CDD34CB0082F761 /* libopencv_ocl.2.4.11.dylib */; };
+		673F9A691CDD34CB0082F761 /* libopencv_calib3d.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A641CDD34CB0082F761 /* libopencv_calib3d.2.4.11.dylib */; };
+		673F9A6A1CDD34CB0082F761 /* libopencv_objdetect.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A651CDD34CB0082F761 /* libopencv_objdetect.2.4.11.dylib */; };
+		673F9A6B1CDD34CB0082F761 /* libopencv_video.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A661CDD34CB0082F761 /* libopencv_video.2.4.11.dylib */; };
+		673F9A701CDD354F0082F761 /* facedet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A6C1CDD354F0082F761 /* facedet.cpp */; };
+		673F9A711CDD354F0082F761 /* initasm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A6E1CDD354F0082F761 /* initasm.cpp */; };
+		673F9A761CDD70F10082F761 /* datatypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A751CDD70F10082F761 /* datatypes.cpp */; };
+		673F9A841CDE888D0082F761 /* libopencv_contrib.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A7B1CDE888D0082F761 /* libopencv_contrib.2.4.11.dylib */; };
+		673F9A851CDE888D0082F761 /* libopencv_stitching.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A7C1CDE888D0082F761 /* libopencv_stitching.2.4.11.dylib */; };
+		673F9A861CDE888D0082F761 /* libopencv_superres.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A7D1CDE888D0082F761 /* libopencv_superres.2.4.11.dylib */; };
+		673F9A871CDE888D0082F761 /* libopencv_nonfree.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A7E1CDE888D0082F761 /* libopencv_nonfree.2.4.11.dylib */; };
+		673F9A881CDE888D0082F761 /* libopencv_videostab.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A7F1CDE888D0082F761 /* libopencv_videostab.2.4.11.dylib */; };
+		673F9A891CDE888D0082F761 /* libopencv_gpu.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A801CDE888D0082F761 /* libopencv_gpu.2.4.11.dylib */; };
+		673F9A8A1CDE888D0082F761 /* libopencv_features2d.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A811CDE888D0082F761 /* libopencv_features2d.2.4.11.dylib */; };
+		673F9A8B1CDE888D0082F761 /* libopencv_photo.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A821CDE888D0082F761 /* libopencv_photo.2.4.11.dylib */; };
+		673F9A8C1CDE888D0082F761 /* libopencv_flann.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A831CDE888D0082F761 /* libopencv_flann.2.4.11.dylib */; };
+		673F9A8E1CDE96160082F761 /* libopencv_haartraining_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A8D1CDE96160082F761 /* libopencv_haartraining_engine.a */; };
+		673F9A911CDE96360082F761 /* libopencv_java2411.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A8F1CDE96360082F761 /* libopencv_java2411.dylib */; };
+		673F9A921CDE96360082F761 /* libopencv_ts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 673F9A901CDE96360082F761 /* libopencv_ts.a */; };
+		673F9A9E1CE00E660082F761 /* svmClassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9A9C1CE00E660082F761 /* svmClassifier.cpp */; };
+		673F9AA41CE057C40082F761 /* FaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 673F9AA31CE057C40082F761 /* FaceDetector.cpp */; };
+		675C56861CE1102F001426AF /* ASMCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 675C56841CE1102F001426AF /* ASMCalculator.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		673F9A0E1CDCF49D0082F761 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		673F9A101CDCF49D0082F761 /* EmotionRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EmotionRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		673F9A1A1CDD04D30082F761 /* libopencv_imgproc.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_imgproc.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A1B1CDD04D30082F761 /* libopencv_ml.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_ml.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A1C1CDD04D30082F761 /* libopencv_core.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_core.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A201CDD07FB0082F761 /* libopencv_highgui.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_highgui.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A231CDD32620082F761 /* asm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = asm.cpp; path = stasm/asm.cpp; sourceTree = "<group>"; };
+		673F9A241CDD32620082F761 /* asm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asm.h; path = stasm/asm.h; sourceTree = "<group>"; };
+		673F9A251CDD32620082F761 /* atface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atface.h; path = stasm/atface.h; sourceTree = "<group>"; };
+		673F9A261CDD32620082F761 /* basedesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = basedesc.h; path = stasm/basedesc.h; sourceTree = "<group>"; };
+		673F9A271CDD32620082F761 /* classicdesc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = classicdesc.cpp; path = stasm/classicdesc.cpp; sourceTree = "<group>"; };
+		673F9A281CDD32620082F761 /* classicdesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = classicdesc.h; path = stasm/classicdesc.h; sourceTree = "<group>"; };
+		673F9A291CDD32620082F761 /* convshape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = convshape.cpp; path = stasm/convshape.cpp; sourceTree = "<group>"; };
+		673F9A2A1CDD32620082F761 /* convshape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = convshape.h; path = stasm/convshape.h; sourceTree = "<group>"; };
+		673F9A2B1CDD32620082F761 /* err.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = err.cpp; path = stasm/err.cpp; sourceTree = "<group>"; };
+		673F9A2C1CDD32620082F761 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = err.h; path = stasm/err.h; sourceTree = "<group>"; };
+		673F9A2D1CDD32620082F761 /* eyedet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eyedet.cpp; path = stasm/eyedet.cpp; sourceTree = "<group>"; };
+		673F9A2E1CDD32620082F761 /* eyedet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eyedet.h; path = stasm/eyedet.h; sourceTree = "<group>"; };
+		673F9A2F1CDD32620082F761 /* eyedist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eyedist.cpp; path = stasm/eyedist.cpp; sourceTree = "<group>"; };
+		673F9A301CDD32620082F761 /* eyedist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eyedist.h; path = stasm/eyedist.h; sourceTree = "<group>"; };
+		673F9A311CDD32620082F761 /* faceroi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = faceroi.cpp; path = stasm/faceroi.cpp; sourceTree = "<group>"; };
+		673F9A321CDD32620082F761 /* faceroi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = faceroi.h; path = stasm/faceroi.h; sourceTree = "<group>"; };
+		673F9A331CDD32620082F761 /* hat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hat.cpp; path = stasm/hat.cpp; sourceTree = "<group>"; };
+		673F9A341CDD32620082F761 /* hat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hat.h; path = stasm/hat.h; sourceTree = "<group>"; };
+		673F9A351CDD32620082F761 /* hatdesc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hatdesc.cpp; path = stasm/hatdesc.cpp; sourceTree = "<group>"; };
+		673F9A361CDD32620082F761 /* hatdesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hatdesc.h; path = stasm/hatdesc.h; sourceTree = "<group>"; };
+		673F9A371CDD32620082F761 /* landmarks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = landmarks.cpp; path = stasm/landmarks.cpp; sourceTree = "<group>"; };
+		673F9A381CDD32620082F761 /* landmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = landmarks.h; path = stasm/landmarks.h; sourceTree = "<group>"; };
+		673F9A391CDD32620082F761 /* landtab_muct77.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = landtab_muct77.h; path = stasm/landtab_muct77.h; sourceTree = "<group>"; };
+		673F9A3A1CDD32620082F761 /* misc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = misc.cpp; path = stasm/misc.cpp; sourceTree = "<group>"; };
+		673F9A3B1CDD32620082F761 /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = misc.h; path = stasm/misc.h; sourceTree = "<group>"; };
+		673F9A3C1CDD32620082F761 /* pinstart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pinstart.cpp; path = stasm/pinstart.cpp; sourceTree = "<group>"; };
+		673F9A3D1CDD32620082F761 /* pinstart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pinstart.h; path = stasm/pinstart.h; sourceTree = "<group>"; };
+		673F9A3E1CDD32620082F761 /* print.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = print.cpp; path = stasm/print.cpp; sourceTree = "<group>"; };
+		673F9A3F1CDD32620082F761 /* print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = print.h; path = stasm/print.h; sourceTree = "<group>"; };
+		673F9A401CDD32620082F761 /* shape17.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shape17.cpp; path = stasm/shape17.cpp; sourceTree = "<group>"; };
+		673F9A411CDD32620082F761 /* shape17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shape17.h; path = stasm/shape17.h; sourceTree = "<group>"; };
+		673F9A421CDD32620082F761 /* shapehacks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shapehacks.cpp; path = stasm/shapehacks.cpp; sourceTree = "<group>"; };
+		673F9A431CDD32620082F761 /* shapehacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shapehacks.h; path = stasm/shapehacks.h; sourceTree = "<group>"; };
+		673F9A441CDD32620082F761 /* shapemod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shapemod.cpp; path = stasm/shapemod.cpp; sourceTree = "<group>"; };
+		673F9A451CDD32620082F761 /* shapemod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shapemod.h; path = stasm/shapemod.h; sourceTree = "<group>"; };
+		673F9A461CDD32620082F761 /* startshape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = startshape.cpp; path = stasm/startshape.cpp; sourceTree = "<group>"; };
+		673F9A471CDD32620082F761 /* startshape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = startshape.h; path = stasm/startshape.h; sourceTree = "<group>"; };
+		673F9A481CDD32620082F761 /* stasm_landmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stasm_landmarks.h; path = stasm/stasm_landmarks.h; sourceTree = "<group>"; };
+		673F9A491CDD32620082F761 /* stasm_lib_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stasm_lib_ext.h; path = stasm/stasm_lib_ext.h; sourceTree = "<group>"; };
+		673F9A4A1CDD32620082F761 /* stasm_lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stasm_lib.cpp; path = stasm/stasm_lib.cpp; sourceTree = "<group>"; };
+		673F9A4B1CDD32620082F761 /* stasm_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stasm_lib.h; path = stasm/stasm_lib.h; sourceTree = "<group>"; };
+		673F9A4C1CDD32620082F761 /* stasm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stasm.cpp; path = stasm/stasm.cpp; sourceTree = "<group>"; };
+		673F9A4D1CDD32620082F761 /* stasm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stasm.h; path = stasm/stasm.h; sourceTree = "<group>"; };
+		673F9A621CDD34CB0082F761 /* libopencv_legacy.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_legacy.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_legacy.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A631CDD34CB0082F761 /* libopencv_ocl.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ocl.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_ocl.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A641CDD34CB0082F761 /* libopencv_calib3d.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_calib3d.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A651CDD34CB0082F761 /* libopencv_objdetect.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_objdetect.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A661CDD34CB0082F761 /* libopencv_video.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_video.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_video.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A6C1CDD354F0082F761 /* facedet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = facedet.cpp; path = stasm/MOD_1/facedet.cpp; sourceTree = "<group>"; };
+		673F9A6D1CDD354F0082F761 /* facedet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = facedet.h; path = stasm/MOD_1/facedet.h; sourceTree = "<group>"; };
+		673F9A6E1CDD354F0082F761 /* initasm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = initasm.cpp; path = stasm/MOD_1/initasm.cpp; sourceTree = "<group>"; };
+		673F9A6F1CDD354F0082F761 /* initasm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = initasm.h; path = stasm/MOD_1/initasm.h; sourceTree = "<group>"; };
+		673F9A741CDD65830082F761 /* contentLoader.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = contentLoader.sh; sourceTree = "<group>"; };
+		673F9A751CDD70F10082F761 /* datatypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = datatypes.cpp; sourceTree = "<group>"; };
+		673F9A771CDE75EF0082F761 /* dataset-generator.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "dataset-generator.py"; sourceTree = "<group>"; };
+		673F9A7B1CDE888D0082F761 /* libopencv_contrib.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_contrib.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_contrib.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A7C1CDE888D0082F761 /* libopencv_stitching.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_stitching.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A7D1CDE888D0082F761 /* libopencv_superres.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_superres.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_superres.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A7E1CDE888D0082F761 /* libopencv_nonfree.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_nonfree.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_nonfree.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A7F1CDE888D0082F761 /* libopencv_videostab.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_videostab.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A801CDE888D0082F761 /* libopencv_gpu.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_gpu.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_gpu.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A811CDE888D0082F761 /* libopencv_features2d.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_features2d.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A821CDE888D0082F761 /* libopencv_photo.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_photo.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A831CDE888D0082F761 /* libopencv_flann.2.4.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_flann.2.4.11.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_flann.2.4.11.dylib"; sourceTree = "<group>"; };
+		673F9A8D1CDE96160082F761 /* libopencv_haartraining_engine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_haartraining_engine.a; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_haartraining_engine.a"; sourceTree = "<group>"; };
+		673F9A8F1CDE96360082F761 /* libopencv_java2411.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_java2411.dylib; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_java2411.dylib"; sourceTree = "<group>"; };
+		673F9A901CDE96360082F761 /* libopencv_ts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_ts.a; path = "../../../../Applications/opencv/opencv-2.4.11/lib/libopencv_ts.a"; sourceTree = "<group>"; };
+		673F9A9C1CE00E660082F761 /* svmClassifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svmClassifier.cpp; sourceTree = "<group>"; };
+		673F9AA01CE017BD0082F761 /* svmClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svmClassifier.h; sourceTree = "<group>"; };
+		673F9AA31CE057C40082F761 /* FaceDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FaceDetector.cpp; sourceTree = "<group>"; };
+		675C56841CE1102F001426AF /* ASMCalculator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ASMCalculator.cpp; sourceTree = "<group>"; };
+		675C56851CE1102F001426AF /* ASMCalculator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ASMCalculator.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		673F9A0D1CDCF49D0082F761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673F9A211CDD07FB0082F761 /* libopencv_highgui.2.4.11.dylib in Frameworks */,
+				673F9A8A1CDE888D0082F761 /* libopencv_features2d.2.4.11.dylib in Frameworks */,
+				673F9A861CDE888D0082F761 /* libopencv_superres.2.4.11.dylib in Frameworks */,
+				673F9A1D1CDD04D30082F761 /* libopencv_imgproc.2.4.11.dylib in Frameworks */,
+				673F9A6B1CDD34CB0082F761 /* libopencv_video.2.4.11.dylib in Frameworks */,
+				673F9A6A1CDD34CB0082F761 /* libopencv_objdetect.2.4.11.dylib in Frameworks */,
+				673F9A671CDD34CB0082F761 /* libopencv_legacy.2.4.11.dylib in Frameworks */,
+				673F9A1F1CDD04D30082F761 /* libopencv_core.2.4.11.dylib in Frameworks */,
+				673F9A891CDE888D0082F761 /* libopencv_gpu.2.4.11.dylib in Frameworks */,
+				673F9A911CDE96360082F761 /* libopencv_java2411.dylib in Frameworks */,
+				673F9A8E1CDE96160082F761 /* libopencv_haartraining_engine.a in Frameworks */,
+				673F9A841CDE888D0082F761 /* libopencv_contrib.2.4.11.dylib in Frameworks */,
+				673F9A1E1CDD04D30082F761 /* libopencv_ml.2.4.11.dylib in Frameworks */,
+				673F9A691CDD34CB0082F761 /* libopencv_calib3d.2.4.11.dylib in Frameworks */,
+				673F9A8C1CDE888D0082F761 /* libopencv_flann.2.4.11.dylib in Frameworks */,
+				673F9A881CDE888D0082F761 /* libopencv_videostab.2.4.11.dylib in Frameworks */,
+				673F9A8B1CDE888D0082F761 /* libopencv_photo.2.4.11.dylib in Frameworks */,
+				673F9A871CDE888D0082F761 /* libopencv_nonfree.2.4.11.dylib in Frameworks */,
+				673F9A851CDE888D0082F761 /* libopencv_stitching.2.4.11.dylib in Frameworks */,
+				673F9A681CDD34CB0082F761 /* libopencv_ocl.2.4.11.dylib in Frameworks */,
+				673F9A921CDE96360082F761 /* libopencv_ts.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		673F9A071CDCF49D0082F761 = {
+			isa = PBXGroup;
+			children = (
+				673F9A8F1CDE96360082F761 /* libopencv_java2411.dylib */,
+				673F9A901CDE96360082F761 /* libopencv_ts.a */,
+				673F9A8D1CDE96160082F761 /* libopencv_haartraining_engine.a */,
+				673F9A7B1CDE888D0082F761 /* libopencv_contrib.2.4.11.dylib */,
+				673F9A7C1CDE888D0082F761 /* libopencv_stitching.2.4.11.dylib */,
+				673F9A7D1CDE888D0082F761 /* libopencv_superres.2.4.11.dylib */,
+				673F9A7E1CDE888D0082F761 /* libopencv_nonfree.2.4.11.dylib */,
+				673F9A7F1CDE888D0082F761 /* libopencv_videostab.2.4.11.dylib */,
+				673F9A801CDE888D0082F761 /* libopencv_gpu.2.4.11.dylib */,
+				673F9A811CDE888D0082F761 /* libopencv_features2d.2.4.11.dylib */,
+				673F9A821CDE888D0082F761 /* libopencv_photo.2.4.11.dylib */,
+				673F9A831CDE888D0082F761 /* libopencv_flann.2.4.11.dylib */,
+				673F9A621CDD34CB0082F761 /* libopencv_legacy.2.4.11.dylib */,
+				673F9A631CDD34CB0082F761 /* libopencv_ocl.2.4.11.dylib */,
+				673F9A641CDD34CB0082F761 /* libopencv_calib3d.2.4.11.dylib */,
+				673F9A651CDD34CB0082F761 /* libopencv_objdetect.2.4.11.dylib */,
+				673F9A661CDD34CB0082F761 /* libopencv_video.2.4.11.dylib */,
+				673F9A201CDD07FB0082F761 /* libopencv_highgui.2.4.11.dylib */,
+				673F9A1A1CDD04D30082F761 /* libopencv_imgproc.2.4.11.dylib */,
+				673F9A1B1CDD04D30082F761 /* libopencv_ml.2.4.11.dylib */,
+				673F9A1C1CDD04D30082F761 /* libopencv_core.2.4.11.dylib */,
+				673F9A121CDCF49D0082F761 /* EmotionRecognition */,
+				673F9A111CDCF49D0082F761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		673F9A111CDCF49D0082F761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				673F9A101CDCF49D0082F761 /* EmotionRecognition */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		673F9A121CDCF49D0082F761 /* EmotionRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				673F9A611CDD32A80082F761 /* stasm */,
+				673F9A721CDD65030082F761 /* training */,
+				673F9A9C1CE00E660082F761 /* svmClassifier.cpp */,
+				673F9AA01CE017BD0082F761 /* svmClassifier.h */,
+				673F9AA31CE057C40082F761 /* FaceDetector.cpp */,
+				675C56841CE1102F001426AF /* ASMCalculator.cpp */,
+				675C56851CE1102F001426AF /* ASMCalculator.hpp */,
+			);
+			path = EmotionRecognition;
+			sourceTree = "<group>";
+		};
+		673F9A611CDD32A80082F761 /* stasm */ = {
+			isa = PBXGroup;
+			children = (
+				673F9A6C1CDD354F0082F761 /* facedet.cpp */,
+				673F9A6D1CDD354F0082F761 /* facedet.h */,
+				673F9A6E1CDD354F0082F761 /* initasm.cpp */,
+				673F9A6F1CDD354F0082F761 /* initasm.h */,
+				673F9A241CDD32620082F761 /* asm.h */,
+				673F9A251CDD32620082F761 /* atface.h */,
+				673F9A261CDD32620082F761 /* basedesc.h */,
+				673F9A271CDD32620082F761 /* classicdesc.cpp */,
+				673F9A281CDD32620082F761 /* classicdesc.h */,
+				673F9A291CDD32620082F761 /* convshape.cpp */,
+				673F9A2A1CDD32620082F761 /* convshape.h */,
+				673F9A2B1CDD32620082F761 /* err.cpp */,
+				673F9A2C1CDD32620082F761 /* err.h */,
+				673F9A2D1CDD32620082F761 /* eyedet.cpp */,
+				673F9A2E1CDD32620082F761 /* eyedet.h */,
+				673F9A2F1CDD32620082F761 /* eyedist.cpp */,
+				673F9A301CDD32620082F761 /* eyedist.h */,
+				673F9A311CDD32620082F761 /* faceroi.cpp */,
+				673F9A321CDD32620082F761 /* faceroi.h */,
+				673F9A331CDD32620082F761 /* hat.cpp */,
+				673F9A341CDD32620082F761 /* hat.h */,
+				673F9A351CDD32620082F761 /* hatdesc.cpp */,
+				673F9A361CDD32620082F761 /* hatdesc.h */,
+				673F9A371CDD32620082F761 /* landmarks.cpp */,
+				673F9A381CDD32620082F761 /* landmarks.h */,
+				673F9A391CDD32620082F761 /* landtab_muct77.h */,
+				673F9A3A1CDD32620082F761 /* misc.cpp */,
+				673F9A3B1CDD32620082F761 /* misc.h */,
+				673F9A3C1CDD32620082F761 /* pinstart.cpp */,
+				673F9A3D1CDD32620082F761 /* pinstart.h */,
+				673F9A3E1CDD32620082F761 /* print.cpp */,
+				673F9A3F1CDD32620082F761 /* print.h */,
+				673F9A401CDD32620082F761 /* shape17.cpp */,
+				673F9A411CDD32620082F761 /* shape17.h */,
+				673F9A421CDD32620082F761 /* shapehacks.cpp */,
+				673F9A431CDD32620082F761 /* shapehacks.h */,
+				673F9A441CDD32620082F761 /* shapemod.cpp */,
+				673F9A451CDD32620082F761 /* shapemod.h */,
+				673F9A461CDD32620082F761 /* startshape.cpp */,
+				673F9A471CDD32620082F761 /* startshape.h */,
+				673F9A481CDD32620082F761 /* stasm_landmarks.h */,
+				673F9A491CDD32620082F761 /* stasm_lib_ext.h */,
+				673F9A4A1CDD32620082F761 /* stasm_lib.cpp */,
+				673F9A4B1CDD32620082F761 /* stasm_lib.h */,
+				673F9A4C1CDD32620082F761 /* stasm.cpp */,
+				673F9A4D1CDD32620082F761 /* stasm.h */,
+				673F9A231CDD32620082F761 /* asm.cpp */,
+			);
+			name = stasm;
+			sourceTree = "<group>";
+		};
+		673F9A721CDD65030082F761 /* training */ = {
+			isa = PBXGroup;
+			children = (
+				673F9A731CDD651F0082F761 /* generator */,
+				673F9A751CDD70F10082F761 /* datatypes.cpp */,
+			);
+			name = training;
+			sourceTree = "<group>";
+		};
+		673F9A731CDD651F0082F761 /* generator */ = {
+			isa = PBXGroup;
+			children = (
+				673F9A741CDD65830082F761 /* contentLoader.sh */,
+				673F9A771CDE75EF0082F761 /* dataset-generator.py */,
+			);
+			name = generator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		673F9A0F1CDCF49D0082F761 /* EmotionRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673F9A171CDCF49D0082F761 /* Build configuration list for PBXNativeTarget "EmotionRecognition" */;
+			buildPhases = (
+				673F9A0C1CDCF49D0082F761 /* Sources */,
+				673F9A0D1CDCF49D0082F761 /* Frameworks */,
+				673F9A0E1CDCF49D0082F761 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmotionRecognition;
+			productName = EmotionRecognition;
+			productReference = 673F9A101CDCF49D0082F761 /* EmotionRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		673F9A081CDCF49D0082F761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+					"New-1",
+					"New-2",
+					"New-3",
+				);
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Himanshu Kandwal";
+				TargetAttributes = {
+					673F9A0F1CDCF49D0082F761 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 673F9A0B1CDCF49D0082F761 /* Build configuration list for PBXProject "EmotionRecognition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 673F9A071CDCF49D0082F761;
+			productRefGroup = 673F9A111CDCF49D0082F761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				673F9A0F1CDCF49D0082F761 /* EmotionRecognition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		673F9A0C1CDCF49D0082F761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673F9A701CDD354F0082F761 /* facedet.cpp in Sources */,
+				673F9A4F1CDD32620082F761 /* classicdesc.cpp in Sources */,
+				673F9A571CDD32620082F761 /* landmarks.cpp in Sources */,
+				673F9A591CDD32620082F761 /* pinstart.cpp in Sources */,
+				675C56861CE1102F001426AF /* ASMCalculator.cpp in Sources */,
+				673F9A521CDD32620082F761 /* eyedet.cpp in Sources */,
+				673F9A5E1CDD32620082F761 /* startshape.cpp in Sources */,
+				673F9A5D1CDD32620082F761 /* shapemod.cpp in Sources */,
+				673F9A711CDD354F0082F761 /* initasm.cpp in Sources */,
+				673F9A561CDD32620082F761 /* hatdesc.cpp in Sources */,
+				673F9A501CDD32620082F761 /* convshape.cpp in Sources */,
+				673F9AA41CE057C40082F761 /* FaceDetector.cpp in Sources */,
+				673F9A581CDD32620082F761 /* misc.cpp in Sources */,
+				673F9A5A1CDD32620082F761 /* print.cpp in Sources */,
+				673F9A531CDD32620082F761 /* eyedist.cpp in Sources */,
+				673F9A761CDD70F10082F761 /* datatypes.cpp in Sources */,
+				673F9A5F1CDD32620082F761 /* stasm_lib.cpp in Sources */,
+				673F9A9E1CE00E660082F761 /* svmClassifier.cpp in Sources */,
+				673F9A5C1CDD32620082F761 /* shapehacks.cpp in Sources */,
+				673F9A601CDD32620082F761 /* stasm.cpp in Sources */,
+				673F9A541CDD32620082F761 /* faceroi.cpp in Sources */,
+				673F9A5B1CDD32620082F761 /* shape17.cpp in Sources */,
+				673F9A551CDD32620082F761 /* hat.cpp in Sources */,
+				673F9A4E1CDD32620082F761 /* asm.cpp in Sources */,
+				673F9A511CDD32620082F761 /* err.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		673F9A151CDCF49D0082F761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		673F9A161CDCF49D0082F761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		673F9A181CDCF49D0082F761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = "/Users/Heman/Documents/workstation/Applications/opencv/opencv-2.4.11/lib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		673F9A191CDCF49D0082F761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = "/Users/Heman/Documents/workstation/Applications/opencv/opencv-2.4.11/lib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		673F9A0B1CDCF49D0082F761 /* Build configuration list for PBXProject "EmotionRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673F9A151CDCF49D0082F761 /* Debug */,
+				673F9A161CDCF49D0082F761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673F9A171CDCF49D0082F761 /* Build configuration list for PBXNativeTarget "EmotionRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673F9A181CDCF49D0082F761 /* Debug */,
+				673F9A191CDCF49D0082F761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 673F9A081CDCF49D0082F761 /* Project object */;
+}
