@@ -1,0 +1,9 @@
+Steps to build :
+
+/Applications/CMake.app/Contents/bin/cmake .
+make
+./VideoDetection 1
+
+or 
+
+./VideoDetection 0
