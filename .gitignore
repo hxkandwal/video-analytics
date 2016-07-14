@@ -1,0 +1,14 @@
+.metadata
+/RemoteSystemsTempFiles
+.DS_Store
+
+*.class
+*.project
+.classpath
+
+# Code Recommenders
+.recommenders/
+
+.settings/
+
+	
