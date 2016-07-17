@@ -4,7 +4,11 @@ Submitted by : Himanshu Kandwal
 
 Contribution :
 
-	Developed a simple classifier for detecting users emotions based on the provided CK+ training set. The implementation using C++ by integrating various open source technologies such as stasm for facial landmarks detection and opencv for real time input processing. This naive detector brings all these components together to acheive the purpose of emotion classification. I have also implemented the logic to detect netural and peak emotion.
+	Developed a simple classifier for detecting users emotions based on the provided CK+ training set. 
+	The implementation using C++ by integrating various open source technologies such as stasm for facial 
+	landmarks detection and opencv for real time input processing. This naive detector brings all these 
+	components together to acheive the purpose of emotion classification. I have also implemented the logic 
+	to detect netural and peak emotion.
 
 Public domain or third-party code Reused :
 
